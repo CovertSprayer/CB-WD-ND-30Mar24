@@ -1,0 +1,87 @@
+/* descendent combinator */
+
+/* div p span{
+  color: red;
+} */
+
+/*  child combinator */
+/* div > span{
+  color: red;
+} */
+
+/* Immediate sibling */
+/* p + div + div{
+  color: red;
+} */
+
+/* general sibling */
+/* p ~ div{
+  color: red;
+} */
+
+a:visited{
+  color: red;
+}
+
+a:link{
+  color: green;
+}
+
+a:hover{
+  color: purple;
+}
+
+a:active{
+  color: white;
+  border: 2px solid red;
+  font-size: 2rem;
+}
+
+
+/* h1:hover{
+  color: aqua;
+  border-bottom: 2px solid aqua;
+} */
+
+/* ul li:first-child{
+  color: red;
+}
+
+ul li:last-child{
+  color: aquamarine;
+} */
+
+/* ul li:nth-child(4){
+  color: orange;
+} */
+
+/* ul li:nth-child(2n){
+  background-color: rgb(159, 158, 158);
+}
+
+ul li:nth-child(2n+1){
+  background-color: rgb(222, 222, 222);
+} */
+
+
+/* focus and blur */
+
+/* input:focus{
+  font-size: 40px;
+} */
+
+li::before{
+  content: "";
+}
+
+li::after{
+  content: "🕕";
+}
+
+div p::first-letter{
+  font-size: 40px;
+}
+
+div p::first-line{
+  color:yellow
+}

@@ -1,0 +1,36 @@
+/* ================== element selector */
+/* h1{
+  color: red;
+  border: 2px solid green;
+}
+
+li{
+  color: blue;
+} */
+
+/* ============== id selector */
+/* #special-li{
+  color: aqua;
+} */
+
+/* =============== class selector */
+/* .fav{
+  color: red;
+} */
+
+/* =============== attribute selector */
+/* a[href="https://www.google.com"]{
+  border: 2px solid red;
+} */
+
+/* ================ universal selector */
+/* 
+
+*{
+  color: red;
+} 
+
+*/
+
+
+
