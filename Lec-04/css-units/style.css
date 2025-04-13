@@ -1,0 +1,36 @@
+html{
+  font-size: 16px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* .container{
+  width: 100vw;
+  height: 500px;
+  background-color: orange;;
+}
+
+.child{
+  height: 20%;
+  width: 80%;
+  background-color: yellow;
+} */
+
+p{
+  font-size: 2rem;
+}
+
+.parent{
+  font-size: 10px;
+}
+
+.para-1{
+  font-size: 2em;
+}
+.para-2{
+  font-size: 1.5em;
+}
+

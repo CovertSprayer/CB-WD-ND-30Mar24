@@ -1,0 +1,21 @@
+/* id > class > element > universal */
+
+#container{
+  color: red;
+}
+
+/* .special-para{
+  color: black;
+} */
+
+/* div{
+  color: aqua;
+} */
+
+*{
+  color: violet;
+}
+
+
+
+

@@ -1,0 +1,31 @@
+.parent{
+  background-color: yellow;
+  padding: 10px;
+}
+
+.child{
+  border: 2px solid black;
+  margin-bottom: 10px;
+  background-color: lightblue;
+}
+/* 
+#special-child{
+  position: relative;
+  background-color: coral;
+  top: 80px;
+  left: 50px;
+} */
+
+.parent{
+  position: relative;
+}
+
+#special-child-2{
+  position: absolute;
+  background-color: coral;
+  /* left: 40px; */
+  top: 0;
+  right: 0;
+  /* bottom: 0; */
+}
+
