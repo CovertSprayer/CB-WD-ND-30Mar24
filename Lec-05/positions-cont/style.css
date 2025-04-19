@@ -1,0 +1,38 @@
+.child{
+  border: 2px solid black;
+  background-color: yellow;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.child-4{
+  background-color: aqua;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 40px;
+  z-index: 20;
+}
+
+.chatbox{
+  width: 200px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.746);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 2px solid black;
+}
+
+.child-5{
+  background-color: lightcoral;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.child-7{
+  position: sticky;
+  top: 100px;
+  background-color: lightgreen;
+}
