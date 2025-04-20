@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  border: 2px solid red;
 }
 
 nav{
@@ -22,9 +23,9 @@ nav{
   width: 100%;
 }
 
-.right-section{
-  /* border: 2px solid blue; */
-}
+/* .right-section{
+  border: 2px solid blue;
+} */
 
 ul {
   display: flex;
