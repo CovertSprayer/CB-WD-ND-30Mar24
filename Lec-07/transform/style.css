@@ -1,0 +1,22 @@
+.box{
+  border: 2px solid black;
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  /* transform: translateX(100px); */
+  /* transform: translateY(300px); */
+
+  /* transform: rotateZ(45deg); */
+  /* transform: rotateY(45deg); */
+  /* transform: rotateX(45deg); */
+
+  /* transform: 
+      translateX(200px) 
+      translateY(200px) 
+      rotateZ(30deg); */
+}
+
+.box:hover{
+  transform: translateX(200px);
+  transition-duration: 500ms;
+}

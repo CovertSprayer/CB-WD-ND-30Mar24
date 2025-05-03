@@ -1,0 +1,36 @@
+.card{
+  border: 2px solid black;
+  width: 250px;
+  height: 320px;
+  margin: 40px auto;
+  position: relative;
+  transition-duration: 1.5s;
+  transform-style: preserve-3d;
+}
+
+body{
+  perspective: 800px;
+}
+
+.front, .back{
+  font-size: 1.8rem;
+  height: 100%;
+  width: 100%;
+}
+
+.front{
+  background-color: yellow;
+  position: absolute;
+  background-image: url(https://www.tripurastarnews.com/wp-content/uploads/2025/01/24-01-2025-Bollywood-Actor-Akshay-Kumar-Sells-Apartment-In-Mumbai-For-Rs.-4.25-Crore-Square-Yards-1.jpeg);
+  background-position: cover;
+}
+
+.back{
+  background-color: lightcoral;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
