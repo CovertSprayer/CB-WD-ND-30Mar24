@@ -1,0 +1,74 @@
+.box{
+  width: 150px;
+  height: 150px;
+  background-color: lightcoral;
+  border: 2px solid black;
+  /* animation-name: colorchange; */
+  /* animation-name: moveForward, colorchange; */
+  /* animation-name: moveForward; */
+  /* animation-duration: 2s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: linear; */
+  /* animation-fill-mode: forwards; */
+
+  /* animation: moveForward 2s ease-in-out infinite alternate,
+              colorchange 2s ease-in-out infinite alternate; */
+  /* animation-delay: 2s; */
+
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+
+  animation: moveForward 2s ease-in-out forwards,
+              moveDownward 2s ease-in-out 2s forwards,
+              moveBackward 2s ease-in-out 4s forwards,
+              moveUpward 2s ease-in-out 6s forwards;
+}
+
+@keyframes grow {
+  from{
+    width: 150px;
+  }
+  to{
+    width: 900px;
+  }
+}
+
+@keyframes colorchange {
+  0%{
+    background-color: lightcoral;
+  }
+
+  50%{
+    background-color: yellow;
+  }
+
+  100%{
+    background-color: lightblue;
+  }
+}
+
+@keyframes moveForward {
+  100%{
+    transform: translateX(250px);
+    /* transform: translateX(250px) translateY(250px) scale(0); */
+  }
+}
+
+@keyframes moveDownward {
+  100%{
+    transform: translateX(250px) translateY(250px);
+  }
+}
+
+@keyframes moveBackward {
+  100%{
+    transform: translateY(250px) translateX(0);
+  }
+}
+
+@keyframes moveUpward {
+  100%{
+    transform: translateY(0)
+  }
+}
+
