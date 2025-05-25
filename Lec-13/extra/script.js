@@ -26,7 +26,6 @@ const marker3 = {...marker2};
 
 
 function add(a, b, ...rest){
-
   const c = rest.reduce((acc, num) =>  {
     return acc + num
   }, 0)
