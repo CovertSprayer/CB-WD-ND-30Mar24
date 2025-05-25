@@ -19,7 +19,7 @@ nums.forEach((num, ind) => {
   // console.log(ind);
 });
 
-// -------------- map
+// -------------- filter
 
 const products = [
   {
@@ -76,9 +76,64 @@ const products = [
 
 // console.log(filteredArr)
 
-const filteredProducts = products.filter((product) => {
-  if(product.price < 30) return true;
-  else false;
-})
+// const filteredProducts = products.filter((product) => {
+//   if(product.price < 30) return true;
+//   else false;
+// })
 
-console.log(filteredProducts)
+// condition ? statement 1 : statement 2
+
+// const filteredProducts = products.filter((product) => {
+//   // return product.price < 30 ? true : false;
+//   return product.price < 30;
+// })
+
+// const filteredProducts = products.filter(product => product.price < 20);
+
+// console.log(filteredProducts);
+
+//  ----------------- map
+
+// const newProducts = [];
+
+// for(let product of products){
+//     // product.id = product.id * 10;
+//     // newProducts.push(product);
+//     // newProducts.push({...product, id: product.id * 10});
+
+//     let obj = {...product, id: product.id * 10};
+//     // obj.id = product.id * 10;
+//     // obj.name = product.name;
+//     // obj.price = product.price;
+//     // obj.category = product.category;
+
+//     newProducts.push(obj);
+// }
+
+const newProducts = products.map((product) => {
+  return {...product, id: product.id * 10};
+  // return product.name;
+});
+
+const arr = [1,2,3,4,5];
+
+const numbers = arr.map(num => num * 10)
+// console.log(numbers);
+
+
+// console.log("new Products", newProducts);
+// console.log(products)
+
+
+// ------------------- reduce
+
+const sum = arr.reduce((acc, num) => {
+  return acc += num;
+}, 10);
+
+const totalPrice = products.reduce((sum, product) => {
+  return sum += product.price;
+}, 0)
+
+console.log("sum", sum);
+console.log("totalPrice", totalPrice);
