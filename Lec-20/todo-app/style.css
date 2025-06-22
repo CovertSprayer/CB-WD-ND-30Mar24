@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#todo-app{
+    /* border: 2px solid black; */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #todo-inputs{
+        display: flex;
+        gap: 10px;
+
+        input{
+            flex-grow: 1;
+            padding: 6px;
+            font-size: 1.2rem;
+        }
+
+        button{
+            padding: 0 40px;
+        }
+    }
+
+    .todo{
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid black; */
+        margin-top: 10px;
+
+        .left-section span{
+            font-size: 1.2rem;
+        }
+
+
+        .right-section span{
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+.checked {
+    text-decoration: line-through;
+}

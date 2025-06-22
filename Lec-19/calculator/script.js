@@ -3,6 +3,7 @@ const screen = document.querySelector('input');
 
 for(let button of buttons){
   button.addEventListener('click', (e) => {
+    e.target.style.animation = "bounce 400ms"
     try {
       const btn = e.target.innerText;
 
