@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80vw;
+    overflow: scroll;
+    margin: 10px auto;
+    scroll-behavior: smooth;
+}
+
+.content-box{
+    width: calc(7 * 200px);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #5e5601;
+    color: white;
+}
+
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+
+    button{
+        width: 100px;
+        height: 30px;
+    }
+
+}
