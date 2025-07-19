@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>  
+  <form method="post" action="/users">
+    <input name="firstName" type="text" placeholder="First Name"> <br>
+    <input name="lastName" type="text" placeholder="Last Name"> <br>
+    <input name="age" type="number" placeholder="Age"> <br>
+
+    <label for="male">Male</label>
+    <input id="male" type="radio" name="gender" value="male" >
+
+    <label for="female">Female</label>
+    <input id="female" type="radio" name="gender" value="female">
+
+    <label for="other">Other</label>
+    <input id="other" type="radio" name="gender" value="other">
+
+    <br>
+    <input name="profession" type="text" placeholder="Profession"> <br>
+    <button>Submit</button>
+  </form>
+</body>
+</html>

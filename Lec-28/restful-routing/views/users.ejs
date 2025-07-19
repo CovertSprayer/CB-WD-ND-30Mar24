@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="/users/new">Create User</a>
+  <h2>List of Users</h2>
+
+  <ul>
+    <% for(let user of users){ %>
+      <div style="border: 2px solid black; margin-bottom: 10px;">
+        <p>First Name: <%= user.firstName %></p>
+        <p>Last Name: <%= user.lastName %></p>
+        <p>Profession: <%= user.profession %></p>
+        <a href="/users/<%= user.id %>">Show</a>
+        <a href="/users/<%= user.id %>/edit">Edit</a>
+        <form method="post" action="/users/<%= user.id %>?_method=DELETE">
+          <button>Delete</button>
+        </form>
+      </div>
+    <% } %>
+  </ul>
+</body>
+</html>
