@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 
 app.use(express.urlencoded());
 // app.use(express.json());
-app.use(methodOverride('_method'));
+app.use(methodOverride("_method"));
 
 const users = [
   {
@@ -78,13 +78,13 @@ app.put("/users/:id", (req, res) => {
   const userId = req.params.id;
   const { firstName, lastName, gender, age, profession } = req.body;
 
-  const user = users.find(user => user.id == userId);
+  const user = users.find((user) => user.id == userId);
 
-  if(firstName) user.firstName = firstName;
-  if(lastName) user.lastName = lastName;
-  if(age) user.age = age;
-  if(gender) user.gender = gender;
-  if(profession) user.profession = profession;
+  if (firstName) user.firstName = firstName;
+  if (lastName) user.lastName = lastName;
+  if (age) user.age = age;
+  if (gender) user.gender = gender;
+  if (profession) user.profession = profession;
 
   res.redirect("/users");
 })
@@ -92,10 +92,10 @@ app.put("/users/:id", (req, res) => {
 // to delete specific user
 app.delete("/users/:id", (req, res) => {
   const userId = req.params.id;
-  const userIndex = users.findIndex(user => user.id == userId);
+  const userIndex = users.findIndex((user) => user.id == userId);
   users.splice(userIndex, 1);
   res.redirect("/users");
-})
+});
 
 app.listen(5000, () => {
   console.log("Server is up at port", 5000);

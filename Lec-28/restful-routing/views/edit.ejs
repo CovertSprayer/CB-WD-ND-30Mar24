@@ -12,13 +12,13 @@
     <input name="age" type="number" placeholder="Age" value="<%= user.age %>"> <br>
 
     <label for="male">Male</label>
-    <input id="male" type="radio" name="gender" value="male">
+    <input id="male" type="radio" name="gender" value="male" <%= user.gender === 'male' ? 'checked' : '' %>>
 
     <label for="female">Female</label>
-    <input id="female" type="radio" name="gender" value="female">
+    <input id="female" type="radio" name="gender" value="female" <%= user.gender === 'female' ? 'checked' : '' %>>
 
     <label for="other">Other</label>
-    <input id="other" type="radio" name="gender" value="other">
+    <input id="other" type="radio" name="gender" value="other" <%= user.gender === 'other' ? 'checked' : '' %>>
 
     <br>
     <input name="profession" type="text" placeholder="Profession" value="<%= user.profession %>"> <br>
