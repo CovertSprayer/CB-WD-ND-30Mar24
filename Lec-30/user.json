@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Shreyance",
+    "profession": "Developer",
+    "Address": "Delhi, India",
+    "cources": [1, 2],
+    "active_course": 1
+  }
+]
+
+

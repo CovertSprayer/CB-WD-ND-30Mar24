@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Full-stack web dev",
+    "description": "some description",
+    "duration": "6 months"
+  },
+  {
+    "id": 2,
+    "title": "Java",
+    "description": "some description",
+    "duration": "3 months"
+  }
+]

@@ -1,0 +1,46 @@
+// create
+instance = new Model({})
+instance.save()
+
+Model.create({})
+Model.create([{}, {}])
+
+// Read
+Model.findOne()
+Model.find()
+
+// Update
+Model.UpdateOne()
+Model.UpdateMany()
+
+// Delete
+Model.deleteOne()
+Model.deleteMany()
+
+
+Model.findById()
+Model.findByIdAndUpdate()
+Model.findByIdAndDelete()
+
+
+// operators
+
+$gt
+$gte
+$lt
+$lte
+$eq
+$ne
+$in
+$nin
+
+$and
+$or
+$not
+
+// {releaseYear: {$gte: 18}}
+// {releaseYear: {$lte: 21}}
+
+// { $and: [q1, q2] }
+
+
