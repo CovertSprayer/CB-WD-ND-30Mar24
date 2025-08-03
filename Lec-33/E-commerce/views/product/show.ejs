@@ -1,0 +1,44 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+    <div class="row">
+      <!-- left part -->
+      <div class="col-12 col-lg-6">
+        <div class="card mx-auto" style="width: 20rem;">
+          <img style="height: 12rem;" src="<%= product.image %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%= product.name %></h5>
+            <p class="card-text">₹ <%= product.price %></p>
+            <p class="card-text"><%= product.description %></p>
+            <a href="/products/<%= product._id %>" class="btn btn-sm btn-primary">Buy Now</a>
+            <a href="/products/<%= product._id %>" class="btn btn-sm btn-success">Add to Cart</a>
+            <form class="d-inline" action="/products/<%= product._id %>?_method=DELETE" method="post">
+              <button class="btn btn-sm btn-danger">Delete</button>
+            </form>
+            <a href="/products/<%= product._id %>/edit" class="btn btn-sm btn-secondary">Edit</a>
+          </div>
+        </div>
+      </div>
+      <!-- right part -->
+      <div class="col-12 col-lg-6">
+       <div style="width: 20rem;" class="mx-auto">
+          <p class="display-5">Leave a review</p>
+          <form method="post" action="/products/<%= product._id %>/reviews">
+            <input name="rating" class="form-control" type="range" min="1" max="5">
+            <textarea name="text" class="form-control" rows="3"></textarea>
+            <button class="btn btn-sm btn-success mt-3">Submit</button>
+          </form>
+
+          <div>
+            <% for( let review of product.reviews ) { %>
+              <div class="card mt-3">
+                <div class="card-body">
+                  <h5 class="card-title"><%= review.rating %></h5>
+                  <p class="card-text"><%= review.text %></p>
+                  <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                </div>
+              </div>
+            <% } %>
+          </div>
+       </div>
+      </div>
+    </div>
