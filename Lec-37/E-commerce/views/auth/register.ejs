@@ -1,0 +1,37 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+  <form action="/register" method="POST">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input name="username" type="text" class="form-control" id="username" placeholder="">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input name="email" type="text" class="form-control" id="email" placeholder="">
+    </div>
+    <!-- role -->
+    <div class="mb-3">
+      <label class="form-label" for="">Role</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="role" value="buyer" id="radioDefault1" checked>
+        <label class="form-check-label" for="radioDefault1">
+          Buyer
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="role" value="seller" id="radioDefault2">
+        <label class="form-check-label" for="radioDefault2">
+          Seller
+        </label>
+      </div>
+    </div>
+
+    <!-- password -->
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input name="password" type="password" class="form-control" id="password" placeholder="">
+    </div>
+    <button class="btn btn-sm btn-primary">Register</button>
+
+    <p class="mt-3">Already registered? <a href="/login">login</a></p>
+  </form>

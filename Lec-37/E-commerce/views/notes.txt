@@ -1,0 +1,9 @@
+<!-- <div>
+  <% if (err && err.message && process.env.NODE_ENV === "dev") { %>
+   <p><%= err.message %></p>
+  <% } %>
+
+  <% if (process.env.NODE_ENV === "prod") { %>
+    <p>Something went wrong.</p>
+  <% } %>
+</div> -->

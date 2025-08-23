@@ -1,0 +1,19 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<div class="container mt-5 text-center">
+    <h1 class="display-4 text-danger">Oops! Something went wrong.</h1>
+    <p class="lead"><%= error.message || 'An unexpected error occurred.' %></p>
+    
+    <% if (error.status) { %>
+      <p class="text-muted">Status Code: <%= error.status %></p>
+    <% } %>
+
+    <% if (error.stack) { %>
+      <details class="text-start mt-4">
+        <summary>Stack Trace</summary>
+        <pre><%= error.stack %></pre>
+      </details>
+    <% } %>
+
+    <a href="/" class="btn btn-primary mt-4">Go Back Home</a>
+  </div>
