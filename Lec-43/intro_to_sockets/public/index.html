@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Chat App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Set Your Username</h2>
+    <form class="username-input">
+      <input id="username" type="text" placeholder="Enter username" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+
+  <div class="chat-container">
+    <header class="chat-header">🌐 Group Chat</header>
+    
+    <!-- Messages -->
+    <div class="messages" id="messages">
+
+    </div>
+    
+    <!-- Input Area -->
+    <form class="chat-input">
+      <!-- <input type="text" id="username" placeholder="Your name"> -->
+      <input type="text" id="message" placeholder="Type a message...">
+      <button>Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
